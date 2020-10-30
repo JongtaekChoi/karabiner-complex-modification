@@ -21,6 +21,28 @@
           ]
         }
       ]
+    },
+    {
+      "description": "held down tilde to ESC",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "grave_accent_and_tilde"
+          },
+          "to_after_key_up": [
+            {
+              "key_code": "grave_accent_and_tilde"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "escape",
+              "halt": true
+            }
+          ]
+        }
+      ]
     }
   ]
 }
